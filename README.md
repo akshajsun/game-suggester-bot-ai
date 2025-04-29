@@ -38,12 +38,12 @@ python app.py
 ```
 Then open http://127.0.0.1:5000 in your browser.
 
-🖼️ UI Preview
+## 🖼️ UI Preview
 <img src="assets/preview.png" width="500"/>
-(Optional: upload a screenshot or screen recording)
 
-📄 License
+## 📄 License
 MIT License — see LICENSE
 
-🙋‍♂️ Author
+## 🙋‍♂️ Author
 Akshaj S
+Gautam Girish
