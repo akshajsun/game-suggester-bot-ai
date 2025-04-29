@@ -42,8 +42,8 @@ Then open http://127.0.0.1:5000 in your browser.
 <img src="assets/preview.png" width="500"/>
 
 ## 📄 License
-MIT License — see LICENSE
+MIT License 
 
 ## 🙋‍♂️ Author
-Akshaj S
+Akshaj S ,
 Gautam Girish
