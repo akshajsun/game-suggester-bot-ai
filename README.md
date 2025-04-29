@@ -46,4 +46,4 @@ MIT License
 
 ## 🙋‍♂️ Author
 Akshaj S [@akshajsun](https://github.com/akshajsun)
-Gautam Girish
+Gautam Girish [@NomadWr3nch](https://github.com/NomadWr3nch)
