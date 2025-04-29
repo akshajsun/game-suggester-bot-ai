@@ -15,3 +15,25 @@ An intelligent AI-powered chatbot that recommends games based on your mood, genr
 
 ## 📂 Project Structure
 
+game-suggester-bot-ai/ ├── app.py ├── train_model.py ├── games.json ├── requirements.txt ├── model/ │ └── game_classifier.pkl ├── data/ │ └── training_data.csv ├── templates/ │ └── index.html ├── static/ │ └── style.css
+
+
+## 🛠️ Tech Stack
+
+- Python 3.12
+- Flask
+- Scikit-learn
+- Pandas
+- HTML/CSS/JS
+- HuggingFace Transformers (optional for advanced version)
+
+## 🧪 How to Run Locally
+
+```bash
+git clone https://github.com/akshajsun/game-suggester-bot-ai.git
+cd game-suggester-bot-ai
+pip install -r requirements.txt
+python train_model.py   # (only once to generate model)
+python app.py
+
+Then open http://127.0.0.1:5000 in your browser.
