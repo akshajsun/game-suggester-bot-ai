@@ -36,7 +36,7 @@ pip install -r requirements.txt
 python train_model.py   # (only once to generate model)
 python app.py
 ```
-Then open http://127.0.0.1:5000 in your browser.
+Then open http://127.0.0.1:5000 in your browser
 
 ## 🖼️ UI Preview
 <img src="assets/preview.png" width="500"/>
