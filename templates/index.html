@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎮 Game Suggestion AI</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🎮 GameBot</h1>
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const inputField = document.getElementById("user-input");
+      const message = inputField.value.trim();
+      if (!message) return;
+
+      const chatBox = document.getElementById("chat-box");
+      chatBox.innerHTML += `<div class="user-msg"><span>You:</span> ${message}</div>`;
+
+      const response = await fetch("/get", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message}),
+      });
+
+      const data = await response.json();
+      chatBox.innerHTML += `<div class="bot-msg"><span>Bot:</span> ${data.reply}</div>`;
+      chatBox.scrollTop = chatBox.scrollHeight;
+      inputField.value = "";
+    }
+
+    document.getElementById("user-input").addEventListener("keypress", function (e) {
+      if (e.key === "Enter") sendMessage();
+    });
+  </script>
+</body>
+</html>
