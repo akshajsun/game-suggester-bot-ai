@@ -44,6 +44,6 @@ Then open http://127.0.0.1:5000 in your browser.
 ## 📄 License
 MIT License 
 
-## 🙋‍♂️ Author
+## 🙋‍♂️ Authors
 - Akshaj S [@akshajsun](https://github.com/akshajsun)
 - Gautam Girish [@NomadWr3nch](https://github.com/NomadWr3nch)
