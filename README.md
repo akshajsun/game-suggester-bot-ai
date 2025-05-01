@@ -10,14 +10,6 @@ An intelligent AI-powered chatbot that recommends games based on your mood, genr
 - Prevents repeated “no match” replies
 - Runs 100% offline using scikit-learn & Flask
 
-## 🚀 Live Demo 
-> You can deploy this to Render, Railway, or Replit (DM for help!)
-
-## 📂 Project Structure
-
-game-suggester-bot-ai/ ├── app.py ├── train_model.py ├── games.json ├── requirements.txt ├── model/ │ └── game_classifier.pkl ├── data/ │ └── training_data.csv ├── templates/ │ └── index.html ├── static/ │ └── style.css
-
-
 ## 🛠️ Tech Stack
 
 - Python 3.12
